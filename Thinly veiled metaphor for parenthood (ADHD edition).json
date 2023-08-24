@@ -519,6 +519,27 @@
         "name": "ios-icon-20.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "file": "signal-2023-08-24-110854_005.mp4",
+        "kind": "video",
+        "metadata": "",
+        "name": "signal-2023-08-24-110854_005.mp4",
+        "userAdded": true
+      },
+      {
+        "file": "New video.mp4",
+        "kind": "video",
+        "metadata": "",
+        "name": "New video.mp4",
+        "userAdded": true
+      },
+      {
+        "file": "boo.mp4",
+        "kind": "video",
+        "metadata": "",
+        "name": "boo.mp4",
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -554,7 +575,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.4335774304702377,
+        "zoomFactor": 0.41943397827590645,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -629,8 +650,8 @@
           "name": "ButtonPress",
           "persistentUuid": "2d5daaf0-9510-4730-b49f-d7d45088ccd1",
           "width": 0,
-          "x": 950,
-          "y": 855,
+          "x": 1045,
+          "y": 1864,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -674,8 +695,8 @@
                       "centerPoint": {
                         "automatic": false,
                         "name": "centre",
-                        "x": 1700,
-                        "y": 1083
+                        "x": 0,
+                        "y": 0
                       },
                       "customCollisionMask": [
                         [
@@ -704,8 +725,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 51,
-                        "y": 97
+                        "x": 34,
+                        "y": 32.5
                       },
                       "centerPoint": {
                         "automatic": false,
@@ -740,8 +761,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": -51,
-                        "y": -100
+                        "x": -27.5,
+                        "y": -25
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -995,8 +1016,8 @@
               "useMultipleDirections": false,
               "directions": [
                 {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
+                  "looping": true,
+                  "timeBetweenFrames": 0.6666,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
@@ -1006,6 +1027,42 @@
                         "name": "origine",
                         "x": 0,
                         "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 605,
+                            "y": 0
+                          },
+                          {
+                            "x": 605,
+                            "y": 215
+                          },
+                          {
+                            "x": 0,
+                            "y": 215
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "ui-press.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": -74.5,
+                        "y": 423.5
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -1411,9 +1468,9 @@
               "parameters": [
                 "ButtonPress",
                 "=",
-                "0",
+                "50",
                 "=",
-                "460"
+                "500"
               ]
             },
             {
@@ -1530,6 +1587,14 @@
               "parameters": [
                 "",
                 "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "PauseAnimation"
+              },
+              "parameters": [
+                "ButtonPress"
               ]
             }
           ]
@@ -2487,6 +2552,16 @@
                 "=",
                 "Insane.Y() + 50"
               ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobalTxt"
+              },
+              "parameters": [
+                "Difficulty",
+                "=",
+                "\"Insane\""
+              ]
             }
           ]
         },
@@ -2515,6 +2590,16 @@
                 "=",
                 "Impossible.Y() + 20"
               ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobalTxt"
+              },
+              "parameters": [
+                "Difficulty",
+                "=",
+                "\"Impossible\""
+              ]
             }
           ]
         },
@@ -2542,6 +2627,16 @@
                 "Pointer",
                 "=",
                 "Nightmare.Y() + 50"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobalTxt"
+              },
+              "parameters": [
+                "Difficulty",
+                "=",
+                "\"Nightmare\""
               ]
             }
           ]
@@ -2683,9 +2778,167 @@
       },
       "objectsGroups": [],
       "variables": [],
-      "instances": [],
-      "objects": [],
-      "events": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 718,
+          "layer": "",
+          "name": "Boo",
+          "persistentUuid": "ed5ec24a-9b20-4e24-814c-17dca98031f1",
+          "width": 442,
+          "x": 409,
+          "y": 3,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "assetStoreId": "",
+          "name": "Boo",
+          "tags": "",
+          "type": "Video::VideoObject",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "opacity": 255,
+            "loop": false,
+            "volume": 100,
+            "videoResource": "boo.mp4"
+          }
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"Boo\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "TimeToBoo",
+                "=",
+                "50 + Random(3)"
+              ]
+            },
+            {
+              "type": {
+                "value": "Video::SetOpacity"
+              },
+              "parameters": [
+                "Boo",
+                "=",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"Boo\"",
+                ">=",
+                "Variable(TimeToBoo)"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"Boo\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Video::Play"
+              },
+              "parameters": [
+                "Boo"
+              ]
+            },
+            {
+              "type": {
+                "value": "Video::SetOpacity"
+              },
+              "parameters": [
+                "Boo",
+                "=",
+                "255"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "TimeToBoo",
+                "=",
+                "5 + Random(20)"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Video::Ended"
+              },
+              "parameters": [
+                "Boo"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Video::SetOpacity"
+              },
+              "parameters": [
+                "Boo",
+                "=",
+                "0"
+              ]
+            }
+          ]
+        }
+      ],
       "layers": [
         {
           "ambientLightColorB": 200,
